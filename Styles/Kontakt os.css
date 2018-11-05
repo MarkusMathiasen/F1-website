@@ -1,0 +1,16 @@
+div.Both-div {
+  width: calc(50% - 3px);
+  height: 100%;
+}
+
+div#Left {
+  float: left;
+  border-right: 6px solid var(--dark-blue);
+  margin-right: -6px;
+}
+
+div#Right {
+  float: right;
+  border-left: 6px solid var(--dark-blue);
+  margin-left: -6px;
+}
