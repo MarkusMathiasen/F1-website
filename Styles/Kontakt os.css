@@ -1,16 +1,66 @@
 div.Both-div {
   width: calc(50% - 3px);
-  height: 100%;
+  height: calc(100% - 6px);
 }
 
-div#Left {
+div#Content2 {
+  width: 100%;
   float: left;
-  border-right: 6px solid var(--dark-blue);
-  margin-right: -6px;
+  border: 6px solid var(--dark-blue);
+  margin: -6px;
 }
 
-div#Right {
+div#Form {
+  width: auto;
+  height: 368px;
   float: right;
-  border-left: 6px solid var(--dark-blue);
-  margin-left: -6px;
+  border: 6px solid var(--dark-blue);
+  margin: -6px;
+}
+
+form {
+  margin: 20px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+  text-align: justify;
+}
+
+form p {
+  display: inline;
+}
+
+form div {
+  display: none;
+}
+div.show {
+  display: block;
+}
+
+div#Facebook {
+  float: right;
+  margin: 22px 0px 22px 20px;
+}
+
+form input[type=text], textarea {
+  width: 160px;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+div.indhold {
+  width: calc(100% - 256.45px);
+  height: 328px;
+  padding: 20px;
+  border: 6px solid var(--dark-blue);
+  margin: -6px;
+}
+
+#content {
+  padding-bottom: 0px;
 }

@@ -9,10 +9,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="../Images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../Styles/Main-Stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../Styles/Kontakt os.css">
+  <script>
+    function showSelect() {
+      document.getElementById("Selector").classList.add("show");
+    }
+    function hideSelect() {
+      document.getElementById("Selector").classList.remove("show");
+    }
+  </script>
 </head>
 
 <body>
-<header>
+  <header>
     <div><a href="Forside.html"><img src="../Images/nav-logo.png" alt="logo"></a></div>
     <span class="half-circle"></span>
     <div><a href="Forside.html">   Forside                                   </a></div>
@@ -27,9 +35,86 @@
     <div><a href="Kontakt os.html">Kontakt os                                </a></div>
 </header>
   <div id="content">
-  <div id="Left" class="Both-div"></div>
-  <div id="Right" class="Both-div"></div>
-</div>
+    <h1>Kontakt os!</h1>
+    <div id="Content2">
+      <div id="Form">
+        <form id="form1" action="#" method="post">
+          <p>Navn:</p> <br>
+          <input type="text" autofocus>
+          <br><br>
+          <p>Er du elev på ÅSG?</p><br>
+          <p><label for="Ikke elev">Nej:</label></p> <input type="radio" value="Nej" name="Elev på ÅSG" id="Ikke elev" onclick="hideSelect()">
+          <p><label for="Elev">     Ja: </label></p> <input type="radio" value="Ja" name="Elev på ÅSG" id="Elev" onclick="showSelect()">
+          <br><br>
+          <div id="Selector">
+            <p>Hvilken årgang?</p><br>
+            <select name="Aargang" id="Aargang">
+              <option value="blank"></option>
+              <option value="1g">1.g</option>
+              <option value="2g">2.g</option>
+              <option value="3g">3.g</option>
+            </select>
+            <br><br>
+          </div>
+          <p>Besked:</p><br>
+          <textarea name="besked" id="Besked"></textarea>
+          <br>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+      <div class="indhold">
+        <div id="Facebook">
+          <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;"> <!-- start på facebook plugin -->
+          <tr>
+            <td style="">
+              <table border="0" width="280" cellspacing="0" cellpadding="0" style="border-collapse:separate;background-color:#ffffff;border:1px solid #dddfe2;border-radius:3px;font-family:Helvetica, Arial, sans-serif;margin:0px auto;">
+                <tr style="padding-bottom: 8px;">
+                  <td style="">
+                    <img class="img" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-0/c0.0.568.296/p320x320/13935125_1015457245219862_3032154364558581455_n.jpg?_nc_cat=110&amp;_nc_ht=scontent-arn2-1.xx&amp;oh=3f09492461eb30cb625d37d7219e24a0&amp;oe=5C736EE7" width="280" height="146" alt="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size:14px;font-weight:bold;padding:8px 8px 0px 8px;text-align:center;">F1 på Århus Statsgymnasium
+                  </td>
+                </tr>
+                <tr>
+                  <td style="color:#90949c;font-size:12px;font-weight:normal;text-align:center;">Facebook-gruppe · 41 medlemmer
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:8px 12px 12px 12px;">
+                    <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;width:100%;">
+                      <tr>
+                        <td style="background-color:#4267b2;border-radius:3px;text-align:center;">
+                          <a style="color:#3b5998;text-decoration:none;cursor:pointer;width:100%;" href="https://www.facebook.com/plugins/group/join/popup/?group_id=993216730698714&amp;source=email_campaign_plugin" target="_blank" rel="noopener">
+                            <table border="0" cellspacing="0" cellpadding="3" align="center" style="border-collapse:collapse;">
+                              <tr>
+                                <td style="border-bottom:3px solid #4267b2;border-top:3px solid #4267b2;">
+                                  <img width="16" src="https://facebook.com/images/groups/plugin/email/app_fb_32_fig_white.png" />
+                                </td>
+                                <td style="border-bottom:3px solid #4267b2;border-top:3px solid #4267b2;color:#FFF;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:bold;">Bliv medlem af gruppen
+                                </td>
+                              </tr>
+                            </table>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border-top:1px solid #dddfe2;font-size:12px;padding:8px 12px;">Den offentlige gruppe for medlemmer af F1 -- VI POSTER LAN HER --
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          </table> <!-- slut på facebook-plugin -->
+        </div>
+        <p>Her kan du kontakte os, hvis du gerne vil vide lidt mere om F1 end der allerede står på hjemmesiden. Du kan også skrive til os, hvis du godt kunne tænke dig at være medlem. De eneste krav der er til at være medlem af F1 er, at man går på ÅSG, og at man kommer til møderne. Vi tager gerne imod nye medlemmer. Du kan kontakte os her på hjemmesiden ved at bruge formularen til højre. Du kan også bruge liket til vores facebookgruppe og skrive til os der. Alle er velkommen til at være med i gruppen selvom man ikke er medlem af F1. Alternativt kan du også skrive til Jane på mail som er: Jane@anerdetikke.dk</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
