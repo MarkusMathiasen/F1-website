@@ -5,11 +5,11 @@ div.Both-div {
 
 div#Content2 {
   width: 100%;
-  float: left;
   border: 6px solid var(--dark-blue);
   margin: -6px;
 }
 
+/*                       Form */
 div#Form {
   width: auto;
   height: 368px;
@@ -22,26 +22,8 @@ form {
   margin: 20px;
 }
 
-p {
-  padding: 0px;
-  margin: 0px;
-  text-align: justify;
-}
-
 form p {
   display: inline;
-}
-
-form div {
-  display: none;
-}
-div.show {
-  display: block;
-}
-
-div#Facebook {
-  float: right;
-  margin: 22px 0px 22px 20px;
 }
 
 form input[type=text], textarea {
@@ -61,6 +43,15 @@ div.indhold {
   margin: -6px;
 }
 
-#content {
-  padding-bottom: 0px;
+div#content div#Content2 p {
+  padding-left: 0px;
+}
+
+div#Facebook {
+  float: right;
+  margin: 0px 0px 44px 20px;
+}
+
+div#Kontakt_os-tekst {
+  overflow: hidden;
 }
