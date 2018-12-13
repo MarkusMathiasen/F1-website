@@ -1,5 +1,6 @@
 :root {
-  --main-bg:     #D5D6D2;
+  /* --main-bg   #D5D6D2; */
+  --main-bg:     #1a7c8d;
   --dark-grey:   #353C3F;
   --light-grey:  #867978;
   --dark-blue:   #004445;
@@ -13,7 +14,7 @@
 }
 
 body {
-  background-color: var(--light-grey);
+  background-color: var(--main-bg);
 }
 
 body::-webkit-scrollbar {
